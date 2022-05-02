@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Onlinepbx Browser Client',
+  tagline: 'Wrapper over WebSocket API which simplifies their api calls',
+  url: 'https://onlinepbx.azabroflovski.uz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,9 +43,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Onlinepbx',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Onlinepbx',
           src: 'img/logo.svg',
         },
         items: [
@@ -53,11 +53,15 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/api',
+            label: 'API',
+            position: 'left'
+          },
+          {
+            href: 'https://github.com/azabroflovski/onlinepbx',
             label: 'GitHub',
             position: 'right',
           },
@@ -70,7 +74,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Getting started',
                 to: '/docs/intro',
               },
             ],
@@ -79,16 +83,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Blog',
+                href: 'https://www.blog.onlinepbx.ru/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/onlinepbx',
               },
             ],
           },
@@ -96,17 +96,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
+              },
+              {
+                label: 'Knowledge base',
+                href: 'https://kb.onlinepbx.ru/confluence/pages/viewpage.action?pageId=27591348',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} azabroflovski`,
       },
       prism: {
         theme: lightCodeTheme,
